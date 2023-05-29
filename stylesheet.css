@@ -1,29 +1,31 @@
 body {
     padding: 0;
     margin: 0;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 /* Navbar */
 
 nav {
-    position: relative;
-    top: -62px;
-    border: 2px solid red;
+    display: flex;
+    justify-content: flex-end;
 }
 
 ul {
+    border: 3px solid yellow;
     list-style: none;
     text-decoration: none;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 30px;
-    margin-right: 150px;
+    gap: 60px;
+    margin-right: 100px;
+    position: relative;
+    top: -65px;
 }
 
 li {
-    font-size: 17px;
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
     color: black;
 }
@@ -39,19 +41,33 @@ a:hover {
 }
 
 .Author-navcontainer {
-    border: 2px solid blue;
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: 500;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
 }
 
 .Author-navcontainer > div {
-    margin-left: 40px;
+    border: 2px solid red;
+    height: 30px;
 }
 
-.Author-navcontainer > div > p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 19px;
-    color: black;
-    font-weight: 500;
+#Author > p {
+    position: relative;
+    top: -22px;
 }
+
+#Author:hover, #Author:focus {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}
+
 
 /* Heading Section */
 
@@ -64,6 +80,7 @@ a:hover {
 .heading-flex-container {
     display: flex;
     justify-content: left;
+    flex-wrap: wrap;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 23px;
@@ -73,15 +90,21 @@ a:hover {
     width: 1200px;
 }
 
-.heading-flex-container > div:first-child > p, .heading-flex-container-positions > p, .button-container {
+.heading-flex-container > div:first-child > p, .heading-flex-container-subheader > p, .button-container {
     position: relative;
     left: 35px;
 }
 
-.heading-flex-container-positions {
+.heading-flex-container-subheader {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 23px
+    font-size: 20px;
+    width: 1200px;
+    margin-top: -10px;
+    margin-bottom: 30px;
 }
 
 .button-container {
