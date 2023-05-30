@@ -4,6 +4,10 @@ body {
     overflow-x: hidden;
 }
 
+header {
+    margin-top: 20px;
+}
+
 /* Navbar */
 
 nav {
@@ -12,7 +16,6 @@ nav {
 }
 
 ul {
-    border: 3px solid yellow;
     list-style: none;
     text-decoration: none;
     display: flex;
@@ -53,7 +56,6 @@ a:hover {
 }
 
 .Author-navcontainer > div {
-    border: 2px solid red;
     height: 30px;
 }
 
@@ -73,8 +75,32 @@ a:hover {
 
 .heading-section {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    position: relative;
+    left: -350px;
+    top: 30px;
+    height: 350px;
+    width: 350px;
+}
+
+.image-container > div > img {
+    border-radius: 6% 6% 6% 6%;
+    box-shadow: 0.5px 1px 3px 2px;
+    color: rgb(92, 91, 91);
+}
+
+.text-flex-container-main {
+    display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
+    position: relative;
+    left: -280px;
+    top: 20px;
 }
 
 .heading-flex-container {
@@ -86,40 +112,39 @@ a:hover {
     font-size: 23px;
 }
 
-.heading-flex-container > div {
-    width: 1200px;
+.text-flex-container-main, .heading-flex-container > div, .heading-flex-container-subheader {
+    width: 800px;
 }
 
-.heading-flex-container > div:first-child > p, .heading-flex-container-subheader > p, .button-container {
-    position: relative;
-    left: 35px;
-}
 
 .heading-flex-container-subheader {
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
+    color: rgb(70, 66, 66);
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 20px;
-    width: 1200px;
     margin-top: -10px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .button-container {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    gap: 70px;
+    gap: 50px;
+    position: relative;
+    left: -275px;
 }
 
 .button-1, .button-2 {
     width: 100px;
     display: flex;
     justify-content: center;
-    background-color: cornflowerblue;
-    border-radius: 10% 10% 10% 10%;
+    color: white;
+    background-color: #468875;
+    border-radius: 8% 8% 8% 8%;
     transition: all 0.6s ease;
     transform: scale(1);
 }
