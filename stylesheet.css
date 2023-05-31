@@ -43,6 +43,14 @@ a:hover {
     font-weight: 600;
 }
 
+.active {
+    font-weight: 600;
+}
+
+.active:hover {
+    text-decoration: none;
+}
+
 .Author-navcontainer {
     margin-top: 10px;
     width: 300px;
