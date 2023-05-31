@@ -180,9 +180,9 @@ a:hover {
 .skills-flex-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 120px;
 }
 
 #skills-header1 {
@@ -212,9 +212,10 @@ a:hover {
     align-items: center;
     gap: 0px;
     width: 320px;
+    height: 360px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(246, 245, 242);
+    background-color: rgb(243, 243, 243);
     border-radius: 8% 8% 8% 8%;
     box-shadow: 1.5px 2.5px 10px 3.5px;
     color: darkgrey;
@@ -260,12 +261,20 @@ a:hover {
     width: 300px;
     font-size: 13px;
     position: relative;
-    top: 20px;
+    top: 0px;
 }
 
 .skill-box3 > div:last-child {
-    position: relative;
-    top: 20px;
     width: 300px;
     font-size: 13px;
+}
+
+#skills-h1-p2 {
+    position: relative;
+    top: 20px;
+}
+
+#skills-h2-p2 {
+    position: relative;
+    top: 13px;
 }
