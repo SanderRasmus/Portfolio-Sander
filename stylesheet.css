@@ -8,7 +8,7 @@ header {
     margin-top: 20px;
 }
 
-/* Navbar */
+/* Navbar and Author text */
 
 nav {
     display: flex;
@@ -79,7 +79,7 @@ a:hover {
 }
 
 
-/* Heading Section */
+/* Heading Section - Index.html start page */
 
 .heading-section {
     display: flex;
@@ -136,6 +136,8 @@ a:hover {
     margin-bottom: 0px;
 }
 
+/* Button Containers and Hover attributes */
+
 .button-container {
     display: flex;
     flex-direction: row;
@@ -168,3 +170,99 @@ a:hover {
     transform: scale(1.2) perspective(1px);
 }
 
+/* Skill containers & Flexboxes */
+
+.skills-section {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.skills-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#skills-header1 {
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    top: 17px;
+}
+
+#skills-header2 {
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    top: 17px;
+}
+
+#skills-header3 {
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    top: 17px;
+}
+
+.skill-box1, .skill-box2, .skill-box3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    width: 320px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(246, 245, 242);
+    border-radius: 8% 8% 8% 8%;
+    box-shadow: 0.5px 0.5px 2px 0.5px;
+    color: darkgrey;
+    transition: all 0.6s ease;
+    transform: scale(1);
+}
+
+.skill-box1:hover, .skill-box2:hover, .skill-box3:hover {
+    transform: scale(1.06) perspective(1px);
+}
+
+.skill-box1 > div:first-child {
+    position: relative;
+    top: 15px;
+    width: 65px;
+    height: 65px;
+}
+
+.skill-box1 > div {
+    width: 350px;
+    color: black;
+}
+
+.skill-box1 > div:last-child {
+    width: 300px;
+    font-size: 13px;
+}
+
+.skill-box2 > div:first-child, .skill-box3 > div:first-child {
+    position: relative;
+    top: 15px;
+    width: 65px;
+    height: 65px;
+}
+
+.skill-box2 > div, .skill-box3 > div {
+    width: 350px;
+    color: black;
+}
+
+.skill-box2 > div:last-child {
+    width: 300px;
+    font-size: 13px;
+    position: relative;
+    top: 20px;
+}
+
+.skill-box3 > div:last-child {
+    position: relative;
+    top: 20px;
+    width: 300px;
+    font-size: 13px;
+}
