@@ -216,7 +216,7 @@ a:hover {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(246, 245, 242);
     border-radius: 8% 8% 8% 8%;
-    box-shadow: 0.5px 0.5px 2px 0.5px;
+    box-shadow: 1.5px 2.5px 10px 3.5px;
     color: darkgrey;
     transition: all 0.6s ease;
     transform: scale(1);
@@ -224,7 +224,7 @@ a:hover {
 
 .skill-box1:hover, .skill-box2:hover, .skill-box3:hover {
     transform: scale(1.06) perspective(1px);
-    color: black;
+    color: rgb(44, 43, 43);
 }
 
 .skill-box1 > div:first-child {
