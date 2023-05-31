@@ -224,6 +224,7 @@ a:hover {
 
 .skill-box1:hover, .skill-box2:hover, .skill-box3:hover {
     transform: scale(1.06) perspective(1px);
+    color: black;
 }
 
 .skill-box1 > div:first-child {
